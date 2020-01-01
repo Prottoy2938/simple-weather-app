@@ -1,6 +1,7 @@
 const request = require("request");
 
 const geocode = (address, callback) => {
+  // change the api key, right now I have mine "pk.eyJ1IjoicHJvdHRheSIsImEiOiJjazRqaTZlZDMwd25rM21udHRsNzdjbGNyIn0.mRfbLioH5iMtN9QDXwfDDA", it might not work in yours and its not permited. Best practice is get your own key from MapBox. You can get your key by signing in.
   const url =
     "https://api.mapbox.com/geocoding/v5/mapbox.places/" +
     address +

@@ -1,6 +1,7 @@
 const request = require("request");
 
 const forecast = (latitude, longitude, callback) => {
+  // change the api key, right now I have mine "0103ea055edf1a67bb19567a5f9a8fef", it might not work in yours and its not permited. Best practice is get your own key from darksky. You can get your key by signing in.
   const url =
     "https://api.darksky.net/forecast/0103ea055edf1a67bb19567a5f9a8fef/" +
     latitude +
