@@ -23,22 +23,22 @@ app.use(express.static(publicDirectoryPath));
 app.get("", (req, res) => {
   res.render("index", {
     title: "Weather",
-    name: "Prottay Rudra"
+    name: "My Name"
   });
 });
 
 app.get("/about", (req, res) => {
   res.render("about", {
-    title: "About Me",
-    name: "Prottay Rudra"
+    title: "About This Project",
+    name: "My Name"
   });
 });
 
 app.get("/help", (req, res) => {
   res.render("help", {
-    helpText: "This is some helpful text.",
+    helpText: "The code for this website is hosted on Github",
     title: "Help",
-    name: "Prottay Rudra"
+    name: "My Name"
   });
 });
 
